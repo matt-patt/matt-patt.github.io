@@ -1,5 +1,5 @@
-int deg = 0;
-while(true){
-  document.body.style.transform="rotate(" + deg + "deg)" ;
-  deg+=1;
-}
+var deg = 0;
+window.setInterval(function () {
+      document.body.style.transform="rotate(" + deg + "deg)" ;
+      deg+=1;
+    }, 50);
