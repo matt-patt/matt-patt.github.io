@@ -1,27 +1,51 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <style>
-      body {
-        background-color: #323F48;     
-        overflow: hidden;
-      }
-      p {
-        text-align: center;
-        color: #6B7984;
-        font-size: 35em;
-        margin: 0;
-      }
-      #parent {    
-        max-height: 100%;
-        max-width: 100%;
-        margin-top:7em
-      }
-    </style>
-  </head>
+<head>
+  <style>
+    body {
+      background-color: #323F48;     
+      overflow: hidden;
+    }
+    #main {
+      text-align: center;
+      color: #6B7984;
+      font-size: 30em;
+      margin: 0;
+    }
+    #parent {
+      position:relative;
+      margin-top:7em
+    }
+    #projects {
+     position:absolute; 
+     bottom:0;
+     margin-left: auto;
+     margin-right: auto;
+     width: 100%
+   }
+   #links {
+     text-align: center;
+     color: white;
+     font-size: 4em;
+     font-family: "Courier New", Courier, monospace;
+     text-decoration: none;
+   }
+   a {
+     all:inherit;
+   }
+    a:hover{
+      text-decoration: underline;
+    }
+  </style>
+</head>
 
-  <body>
-    <div id="parent"><p id="main">Hey.</p></div>
-    <script src = script/script.js></script>
-  </body>
+<body>
+  <div id="parent"><p id="main">Hey.</p></div>
+    
+  <div id="projects"><p id="links">
+    <a href="https://github.com/matt-patt/TurnDownForChat">Turn Down For Chat</a>
+  </p></div>
+
+<script src="script/script.js"></script>
+</body>
 </html>
