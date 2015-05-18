@@ -1,54 +1,63 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta name=viewport content="width=device-width, initial-scale=1">
-  <title>Matt Patt</title>
-  <style>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Matt Patt</title>
+    <style>
     body {
-      background-color: #323F48;
-      overflow: hidden;
-    }
-    #main {
-      text-align: center;
-      color: #6B7984;
-      font-size: 30em;
-      margin: 0;
-    }
-    #parent {
-      position:relative;
-      margin-top:7em
-    }
-    #projects {
-     position:absolute;
-     bottom:0;
-     margin-left: auto;
-     margin-right: auto;
-     width: 100%
-   }
-   #links {
-     text-align: center;
-     color: white;
-     font-size: 4em;
-     font-family: "Courier New", Courier, monospace;
-     text-decoration: none;
-   }
-   a {
-     all:inherit;
-     cursor:url("lol jon.png"),pointer;
-   }
-    a:hover{
-      text-decoration: underline;
-    }
-  </style>
+            background-color: #323F48;
+            overflow: hidden;
+        }
+
+        #main {
+            text-align: center;
+            color: #6B7984;
+            font-size: 45vw;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        #projects {
+            text-align: center;
+            position: relative;
+            margin-top: -10%;
+        }
+
+
+        a {
+            color: white;
+            font-size: 6vw;
+            font-family: "Courier New", Courier, monospace;
+            text-decoration: none;
+            cursor: url("lol jon.png"), pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        @media only screen and (orientation: portrait) {
+              #parent {
+                margin-top: 50%;
+              }
+              #projects{
+                margin-top: 70%;
+              }
+              a{
+                font-size: 8vw;
+              }
+          }
+    </style>
 </head>
 
 <body>
-  <div id="parent"><p id="main">Hey.</p></div>
+    <div id="parent">
+        <p id="main">Hey.</p>
+    </div>
 
-  <div id="projects"><p id="links">
-    <a href="https://github.com/matt-patt/TurnDownForChat">Turn Down For Chat</a>
-  </p></div>
-
-<script src="script/script.js"></script>
+    <p id="projects"><a href=
+    "https://github.com/matt-patt/TurnDownForChat">Turn Down For
+    Chat</a></p>
+    <script src="script/script.js"></script>
 </body>
 </html>
